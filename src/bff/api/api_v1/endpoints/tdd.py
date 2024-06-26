@@ -19,3 +19,6 @@ class ArrayOperations:
 
     def raw(self):
         return self.array
+
+    def is_all_even(self):
+        return True # これは仮実装
