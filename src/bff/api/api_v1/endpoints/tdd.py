@@ -21,4 +21,9 @@ class ArrayOperations:
         return self.array
 
     def is_all_even(self):
-        return True # これは仮実装
+        # self.arrayの要素を1つずつ取り出して、奇数があればFalseを返す
+        for num in self.array:
+            if num % 2 != 0:
+                return False
+
+        return True
