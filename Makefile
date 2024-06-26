@@ -50,5 +50,5 @@ logsf:
 logs:
 	docker compose logs
 
-run_test:
+run_test: upd
 	docker exec $(APP_NAME)-app /bin/sh -c 'cd .. && python -m unittest discover -s test'
