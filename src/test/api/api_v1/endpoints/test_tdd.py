@@ -11,5 +11,9 @@ class TestArrayOperations(unittest.TestCase):
         array = ArrayOperations([16,12,24])
         assert [16,12,24] == array.raw()
 
+    def test_配列の中身が全て偶数であればtrueを返す(self):
+        array = ArrayOperations([16,12,24])
+        assert True == array.is_all_even()
+
 if __name__ == "__main__":
     unittest.main()
