@@ -15,5 +15,9 @@ class TestArrayOperations(unittest.TestCase):
         array = ArrayOperations([16,12,24])
         assert True == array.is_all_even()
 
+    def test_配列の中身に奇数が含まれていればfalseを返す(self):
+        array = ArrayOperations([16,12,25])
+        assert False == array.is_all_even()
+
 if __name__ == "__main__":
     unittest.main()
