@@ -20,9 +20,9 @@ class ArrayOperations:
     def raw(self):
         return self.array
 
-    def is_all_even(self, array):
+    def is_all_even(self):
         # self.arrayの要素を1つずつ取り出して、奇数があればFalseを返す
-        for num in array:
+        for num in self.array:
             if num % 2 != 0:
                 return False
 
@@ -30,9 +30,9 @@ class ArrayOperations:
 
     def number_of_divided_times(self):
         divided_times = 0
-        array = self.array
-        while self.is_all_even(array):
-            array = [num / 2 for num in array]
+        array = ArrayOperations(self.array)
+        while array.is_all_even():
+            array = ArrayOperations([num / 2 for num in array.raw()])
             divided_times += 1
 
         return divided_times
