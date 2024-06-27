@@ -30,8 +30,12 @@ class ArrayOperations:
 
     def number_of_divided_times(self):
         divided_times = 0
-        if not self.is_all_even(self.array):
-            return divided_times
-        divided_times += 1
+        array = self.array
+        while self.is_all_even(array):
+            new_array = []
+            for num in array:
+                new_array.append(num / 2)
+            array = new_array
+            divided_times += 1
 
         return divided_times
