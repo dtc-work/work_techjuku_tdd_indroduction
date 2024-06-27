@@ -11,6 +11,7 @@ class TestArrayOperations(unittest.TestCase):
         array = ArrayOperations([16,12,24])
         assert [16,12,24] == array.raw()
 
+class TestIsAllEven(TestArrayOperations):
     def test_配列の中身が全て偶数であればtrueを返す(self):
         array = ArrayOperations([16,12,24])
         assert True == array.is_all_even([8,6,12])
@@ -19,6 +20,7 @@ class TestArrayOperations(unittest.TestCase):
         array = ArrayOperations([16,12,24])
         assert False == array.is_all_even([4,3,6])
 
+class TestNumberOfDividedTimes(TestArrayOperations):
     def test_配列の中身を2で割る操作を繰り返し操作できた回数を返す_16_12_24だと2回(self):
         array = ArrayOperations([16,12,24])
         assert 2 == array.number_of_divided_times()
