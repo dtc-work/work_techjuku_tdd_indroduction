@@ -13,11 +13,11 @@ class TestArrayOperations(unittest.TestCase):
 
     def test_配列の中身が全て偶数であればtrueを返す(self):
         array = ArrayOperations([16,12,24])
-        assert True == array.is_all_even()
+        assert True == array.is_all_even([8,6,12])
 
     def test_配列の中身に奇数が含まれていればfalseを返す(self):
-        array = ArrayOperations([16,12,25])
-        assert False == array.is_all_even()
+        array = ArrayOperations([16,12,24])
+        assert False == array.is_all_even([4,3,6])
 
     def test_配列の中身が全て偶数であれば1を返す(self):
         array = ArrayOperations([16,12,24])
