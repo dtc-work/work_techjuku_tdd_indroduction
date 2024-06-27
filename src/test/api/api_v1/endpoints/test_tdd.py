@@ -23,5 +23,9 @@ class TestArrayOperations(unittest.TestCase):
         array = ArrayOperations([16,12,24])
         assert [8,6,12] == array.divided_by_2()
 
+    def test_配列の中身に奇数が含まれていればそのまま返す(self):
+        array = ArrayOperations([16,12,25])
+        assert [16,12,25] == array.divided_by_2()
+
 if __name__ == "__main__":
     unittest.main()
