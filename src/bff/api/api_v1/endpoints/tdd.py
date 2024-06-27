@@ -27,3 +27,12 @@ class ArrayOperations:
                 return False
 
         return True
+
+    def divided_by_2(self):
+        response_array = []
+        for num in self.array:
+            if num % 2 != 0:
+                return self.array
+            response_array.append(num // 2)
+
+        return response_array
