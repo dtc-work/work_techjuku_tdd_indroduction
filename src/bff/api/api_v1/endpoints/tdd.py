@@ -29,10 +29,10 @@ class ArrayOperations:
         return True
 
     def number_of_divided_times(self):
-        response_array = []
+        divided_times = 0
         for num in self.array:
             if num % 2 != 0:
-                return self.array
-            response_array.append(num // 2)
+                return divided_times
+        divided_times = 1
 
-        return response_array
+        return divided_times
