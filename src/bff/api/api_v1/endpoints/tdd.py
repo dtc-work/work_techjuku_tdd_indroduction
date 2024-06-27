@@ -30,9 +30,8 @@ class ArrayOperations:
 
     def number_of_divided_times(self):
         divided_times = 0
-        for num in self.array:
-            if num % 2 != 0:
-                return divided_times
+        if not self.is_all_even(self.array):
+            return divided_times
         divided_times += 1
 
         return divided_times
