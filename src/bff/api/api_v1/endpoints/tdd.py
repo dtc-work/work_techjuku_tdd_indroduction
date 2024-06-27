@@ -20,9 +20,9 @@ class ArrayOperations:
     def raw(self):
         return self.array
 
-    def is_all_even(self):
+    def is_all_even(self, array):
         # self.arrayの要素を1つずつ取り出して、奇数があればFalseを返す
-        for num in self.array:
+        for num in array:
             if num % 2 != 0:
                 return False
 
