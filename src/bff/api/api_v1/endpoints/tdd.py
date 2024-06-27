@@ -32,10 +32,7 @@ class ArrayOperations:
         divided_times = 0
         array = self.array
         while self.is_all_even(array):
-            new_array = []
-            for num in array:
-                new_array.append(num / 2)
-            array = new_array
+            array = [num / 2 for num in array]
             divided_times += 1
 
         return divided_times
