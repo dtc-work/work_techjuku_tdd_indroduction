@@ -21,11 +21,11 @@ class TestArrayOperations(unittest.TestCase):
 
     def test_配列の中身が全て偶数であれば要素を全て2で割ったものに置き換えて返す(self):
         array = ArrayOperations([16,12,24])
-        assert [8,6,12] == array.divided_by_2()
+        assert [8,6,12] == array.number_of_divided_times()
 
     def test_配列の中身に奇数が含まれていればそのまま返す(self):
         array = ArrayOperations([16,12,25])
-        assert [16,12,25] == array.divided_by_2()
+        assert [16,12,25] == array.number_of_divided_times()
 
 if __name__ == "__main__":
     unittest.main()
