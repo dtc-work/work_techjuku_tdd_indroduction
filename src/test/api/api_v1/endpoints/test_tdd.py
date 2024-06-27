@@ -19,11 +19,11 @@ class TestArrayOperations(unittest.TestCase):
         array = ArrayOperations([16,12,24])
         assert False == array.is_all_even([4,3,6])
 
-    def test_配列の中身が全て偶数であれば1を返す(self):
+    def test_配列の中身を2で割る操作を繰り返し操作できた回数を返す_16_12_24だと2回(self):
         array = ArrayOperations([16,12,24])
-        assert 1 == array.number_of_divided_times()
+        assert 2 == array.number_of_divided_times()
 
-    def test_配列の中身に奇数が含まれていれば0を返す(self):
+    def test_配列の中身を2で割る操作を繰り返し操作できた回数を返す_16_12_25だと0回(self):
         array = ArrayOperations([16,12,25])
         assert 0 == array.number_of_divided_times()
 
