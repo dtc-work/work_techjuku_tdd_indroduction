@@ -33,6 +33,6 @@ class ArrayOperations:
         for num in self.array:
             if num % 2 != 0:
                 return divided_times
-        divided_times = 1
+        divided_times += 1
 
         return divided_times
