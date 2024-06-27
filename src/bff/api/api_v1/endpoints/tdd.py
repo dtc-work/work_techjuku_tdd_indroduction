@@ -28,7 +28,7 @@ class ArrayOperations:
 
         return True
 
-    def divided_by_2(self):
+    def number_of_divided_times(self):
         response_array = []
         for num in self.array:
             if num % 2 != 0:
